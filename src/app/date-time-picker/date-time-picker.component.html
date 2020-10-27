@@ -1,0 +1,17 @@
+<div class="input-group mr-2">
+    <input 
+    class="form-control" 
+    placeholder="gg/mm/aaaa" 
+    ngbDatepicker #dp="ngbDatepicker"
+    container="body" 
+    (ngModelChange)="update($event)" 
+    [ngModel]="originalValue"
+    [required]="required"
+    [disabled]='disabled'/>
+
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" (click)="dp.open()" type="button" [disabled]='disabled'>
+            <i class="far fa-calendar-alt"></i>
+        </button>
+    </div>
+</div>

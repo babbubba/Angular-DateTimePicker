@@ -1,0 +1,10 @@
+<h2>Date Time Picker</h2>
+<form novalidate (submit)="onSubmit(f)" #f="ngForm" id="dateTimeForm">
+<div>
+ 
+  <div class="form-group">
+    <label for="dataValue">Date Value</label>
+    <app-date-time-picker [ngModel]="dataValue" name="dataValue" ></app-date-time-picker>
+  </div>
+</div>
+</form>
